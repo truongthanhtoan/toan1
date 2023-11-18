@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dang ki form</title>
+</head>
+<body>
+    <div>
+        <h1>ĐĂNG KÝ NHẬP HỌC</h1>
+        <form action="XuLyNhapHoc.php" method="post">
+            <div>
+                Họ tên: <input name="hoten" required/>
+            </div>
+            <div>
+                Mật khẩu: <input name="matkhau" required type="password"/>
+            </div>
+            <div>
+                Giới tính:
+                <input type="radio" name="gioitinh" value="0">Nam
+                <input type="radio" name="gioitinh" value="1"checked>Nữ
+                <input type="radio" name="gioitinh" value="-1">Khác
+            </div>
+            <div>
+                Sở thích:
+                <input type="checkbox" value="Ăn">Ăn
+                <input type="checkbox" value="Ngủ">Ngủ
+                <input type="checkbox" value="Du lịch">Du lịch
+            </div>
+            <div>
+                Quê quán:
+                <select name="quequan">
+                    <option value="HN">Hà Nội</option>
+                    <option value="TG">Tiền Giang</option>
+                </select>
+            </div>
+            <div>
+                Ghi chú:
+                <textarea name="thongtin" rows="10">
+                </textarea>
+            </div>
+            <div>
+                Mày chắc chưa?????????:
+                <input type="radio" value="1" name="confirm">Yes
+                <input type="radio" value="0" name="confirm">No
+            </div>
+            <button>Đăng kí</button>
+            <button type="reset">Nhập lại</button>
+
+
+        </form>
+    </div>
+ 
+</body>
+</html>
